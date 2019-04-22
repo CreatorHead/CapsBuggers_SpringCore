@@ -1,4 +1,4 @@
-package com.caps.spring.core;
+package com.caps.spring.core.java.config;
 
 public class SoftwareTester implements Job {
 	public void doJob() {

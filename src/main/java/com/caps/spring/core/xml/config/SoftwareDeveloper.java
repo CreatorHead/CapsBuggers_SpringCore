@@ -1,4 +1,4 @@
-package com.caps.spring.core;
+package com.caps.spring.core.xml.config;
 
 public class SoftwareDeveloper implements Job {
 	public void doJob() {

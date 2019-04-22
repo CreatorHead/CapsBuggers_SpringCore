@@ -1,4 +1,4 @@
-package com.caps.spring.core;
+package com.caps.spring.core.java.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -16,7 +16,7 @@ public class PersonConfig {
 		return p;
 	}
 	
-	@Bean(name="developer")
+	@Bean(name="tester")
 	public Job getJob() {
 		return new SoftwareTester();
 	}
