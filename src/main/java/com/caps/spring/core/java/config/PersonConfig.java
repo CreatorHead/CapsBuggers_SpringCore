@@ -10,7 +10,7 @@ public class PersonConfig {
 	public Person getPerson(Job job) {
 		Person p = new Person();
 		p.setName("Bhargava");
-		p.setEmail("bhargava@gmail.com");
+//		p.setEmail("bhargava@gmail.com");
 		p.setJob(job);
 		
 		return p;

@@ -3,11 +3,13 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean id="person" class="com.caps.spring.core.xml.config.Person">
+	<bean id="person" class="com.caps.spring.core.xml.config.Person" 
+			init-method="xyz" destroy-method="gettingDestroyed">
 		<property name="email" value="Abhijit@gmail.com"></property>
 		<property name="name" value="Abhijit"></property>
-		<property name="job" ref="tester"></property>
+		<property name="job" ref="devloper"></property>
 	</bean>
 	
 	<bean id="tester" class="com.caps.spring.core.xml.config.SoftwareTester"/>
+	<bean id="devloper" class="com.caps.spring.core.xml.config.SoftwareDeveloper"/>
 </beans>
