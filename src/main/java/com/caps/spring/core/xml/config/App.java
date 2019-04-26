@@ -7,9 +7,9 @@ import org.springframework.context.support.FileSystemXmlApplicationContext;
 public class App {
 	public static void main(String[] args) {
 		ClassPathXmlApplicationContext ctx = 
-				new ClassPathXmlApplicationContext("/PersonConfig.xml");
-		Person p = ctx.getBean(Person.class,"person");
-		p.getJob().doJob();
+				new ClassPathXmlApplicationContext("/CarConfgi.xml");
+		Car car = ctx.getBean(Car.class,"car");
+		System.out.println(car);
 		ctx.close();
 	}
 }

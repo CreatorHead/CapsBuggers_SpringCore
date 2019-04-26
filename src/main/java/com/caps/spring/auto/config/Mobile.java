@@ -1,17 +1,23 @@
 package com.caps.spring.auto.config;
 
+import javax.inject.Inject;
+import javax.inject.Named;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
+@Named
 public class Mobile {
 	
 	private int mobileId = 1234;
 	private String model = "S10";
 	private String brand = "Samsung";
 	
-	@Autowired  @Qualifier("getAirtel")
+	//@Autowired
+	@Inject
+	@Qualifier("getAirtel")
 	private Sim sim;
 	
 	public Sim getSim() {
