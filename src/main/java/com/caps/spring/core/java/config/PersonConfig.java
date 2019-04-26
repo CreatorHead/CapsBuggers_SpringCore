@@ -7,12 +7,11 @@ import org.springframework.context.annotation.Configuration;
 public class PersonConfig {
 	
 	@Bean(name="person")
-	public Person getPerson(Job job) {
+	public Person getPerson() {
 		Person p = new Person();
 		p.setName("Bhargava");
-//		p.setEmail("bhargava@gmail.com");
-		p.setJob(job);
-		
+		p.setEmail("bhargava@gmail.com");
+		p.setJob(getJob());
 		return p;
 	}
 	
